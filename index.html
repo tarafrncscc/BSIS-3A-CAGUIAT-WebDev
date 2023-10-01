@@ -3,24 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tara Francesca Caguiat's Portfolio</title>
+    <title>Tara Caguiat's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.0.7/css/boxicons.min.css">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/caguiatlogoicon.png"
+    />
+    
   </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Tara Francesca L. Caguiat</div>
-      <div>
+  <header>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expertise</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img id="logoimage" src="/assets/kimi.png" onclick=""
+        /></a>
+      </div>
+      <div>
+        <ul class="nav-links">
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </ul>
       </div>
     </nav>
+  </header>
+  <body>
     <nav id="hamburger-nav">
-      <div class="logo">Tara Francesca L. Caguiat</div>
+      <div class="logo">
+        <a href="index.html"
+          ><img width="50px" height="auto" src="/assets/kimi.png"
+        /></a>
+      </div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -29,7 +50,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expertise</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -37,55 +58,367 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile picture.png" alt="Profile Picture" />
+        <img src="./assets/profile picture (2).png" alt="Profile Picture" />
       </div>
+
       <div class="section__text">
-        <p class="section__text__p1">Hello I am</p>
-        <h1 class="title">Tara</h1>
-        <p class="section__text__p2">UX/UI designer | Data Analyst</p>
+        <p class="section__text__p1">Hello! I am</p>
+        <h1 class="title">Tara Francesca</h1>
+        <h2 class="section__text__p2">
+          Frontend Developer<span class="cursor"></span>
+        </h2>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/cv_madz_01.pdf')"
+            onclick="location.href='assets/cv-caguiat.pdf'"
           >
             Download CV
           </button>
           <button
             class="btn btn-color-1"
-            onclick="location.href = './#contact'"
+            onclick="location.href = 'https://www.canva.com/design/DAFvhcdAZTI/AHXS2D8VpNloEigx1qEKCg/view?utm_content=DAFvhcdAZTI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'"
           >
-            Contact Info
+            View CV
           </button>
         </div>
         <div id="socials-container">
           <img
-            src="./assets/linkedin.png"
-            alt="My Linkedin Profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com'"
-          />
-          <img
-            src="./assets/github.png"
+            src="./assets/githubicon.png"
             alt="My Github Profile"
             class="icon"
-            onclick="location.href='https://github.com'"
+            id="gh-container"
+            onclick="location.href='https://github.com/tarafrncscc'"
           />
           <img
-            src="./assets/instagram.png"
-            alt="Instagram Profile"
+            src="./assets/linkedinicon.png"
+            alt="My Linkedin Profile"
             class="icon"
-            onclick="location.href='https://instagram.com/_tarafrncsc_/'"
+            id="lk-container"
+            onclick="location.href='https://www.linkedin.com/in/tara-francesca-c-a5852918b/'"
           />
-
           <img
-            src="./assets/facebook.png"
-            alt="Instagram Profile"
+            src="./assets/facebookicon.png"
+            alt="My Facebook Profile"
             class="icon"
+            id="fb-container"
             onclick="location.href='https://www.facebook.com/Taraaaletss.25'"
           />
         </div>
       </div>
     </section>
+    <section id="about">
+      <h1 class="title-about">About Me</h1>
+      <div class="section-container">
+        <div class="about__pic-container">
+          <img
+            src="./assets/aboutpic.png"
+            alt="About Picture"
+            class="about-pic"
+          />
+          <img
+            src="/assets/coding.jpeg"
+            alt="Hover Image"
+            class="hover-image"
+          />
+        </div>
+        <div class="about-containers">
+          <div class="abt-txt-container">
+            <h1 class="abt-txt">
+              Greetings! I'm Tara, a passionate individual with aspirations to
+              excel as a Frontend Developer.
+            </h1>
+            <div class="abt-txt2-container">
+              <p class="abt-txt2">
+               I've always been fascinated by how technology shapes our world. There's this quote I often reflect on: 'Life is like coding, it's all about finding the right syntax.' This resonates with me because just as in life, every move in the realm of information systems and frontend development has its significance. It's like piecing together a complex puzzle. You need the right balance of planning and creativity. It's not just about lines of code; it's about crafting solutions that really work for people. That's where the magic happens. I'm excited to keep learning and contributing to innovations that make a real difference. <br/> <br/> If you're
+                interested in delving deeper into my background, feel free to
+                peruse the information provided below.
+              </p>
+              <div class="dropdown">
+                <button class="dropbtn">Education</button>
+                <div class="dropdown-content">
+                  <p> ★ JHS in Sto. Niño Catholic School<br/>
+                   ★ SHS in Centro Escolar Integrated School - GP Campus<br/>
+                   ★ College in Technological University of the Philippines - Manila Campus</p>
+                </div>
+              </div>
+              <!-- End of dropdown -->
+              <div class="dropdown2"> 
+                <button class="dropbtn2">Skills</button>
+                <div class="dropdown2-content">
+                  <p> Microsoft Office <br/>
+                    → Word <br/>
+                    → Excel <br/>
+                    → Powerpoint <br/>
+                    → Database <br/>
+                  </p>
+                  <p> Others <br/>
+                    → Video Editing <br/>
+                    → Photo Editing <br/>
+                    → Designing <br/>
+                    → Wireframing <br/>
+                  </p>
+                </div>
+              </div>
+              <!-- End of dropdown -->
+            
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ <section id="experience">
+    <h1 class="title-exp">Expertise</h1>
+  <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details2-container">
+            <p1> Hey!  I'd like to share with you a list of programming languages and editing applications that I'm proficient in. Feel free to click on the corresponding icons below to access comprehensive tutorials for each language.  </p1>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/htmlicon.png"
+                  alt="Experience icon"
+                  class="icon"
+                  onclick="location.href='https://www.w3schools.com/html/default.asp'"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/cssicon.png"
+                  alt="Experience icon"
+                  class="icon"
+                  onclick="location.href='https://www.w3schools.com/css/default.asp'"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/cicon.png"
+                  alt="Experience icon"
+                  class="icon"
+                  onclick="location.href='https://www.w3schools.com/c/index.php'"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/jsicon.png"
+                  alt="Experience icon"
+                  class="icon"
+                  onclick="location.href='https://www.w3schools.com/js/default.asp'"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/c++icon.png"
+                  alt="Experience icon"
+                  class="icon"
+                  onclick="location.href='https://www.w3schools.com/cpp/default.asp'"
+                />
+                <div>
+                  <h3>CPP</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mysqlicon.png"
+                  alt="Experience icon"
+                  class="icon"
+                  onclick="location.href='https://www.w3schools.com/mysql/default.asp'"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/pyicon.png"
+                  alt="Experience icon"
+                  class="icon"
+                  onclick="location.href='https://www.w3schools.com/python/default.asp'"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+           <div class="details-container">
+            <h2 class="experience-sub-title">Adobe Applications</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/animateicon.png"
+                  alt="Experience icon"
+                  class="icon"
+                  onclick="location.href='https://creativecloud.adobe.com/en-x-AFRICA/learn/app/animate'"
+                />
+                <div>
+                  <h3>Animate</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/illustratoricon.png"
+                  alt="Experience icon"
+                  class="icon"
+                  onclick="location.href='https://creativecloud.adobe.com/en-x-AFRICA/learn/app/illustrator'"
+                />
+                <div>
+                  <h3>Illustrator</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/photoshopicon.png"
+                  alt="Experience icon"
+                  class="icon"
+                  onclick="location.href='https://creativecloud.adobe.com/en-x-AFRICA/learn/app/photoshop'"
+
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/lightroomicon.png"
+                  alt="Experience icon"
+                  class="icon"
+                  onclick="location.href='https://creativecloud.adobe.com/en-x-AFRICA/learn/app/lightroom-cc'"
+
+                />
+                <div>
+                  <h3>Lightroom</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+      </div>
+</section>
+    <section id="projects">
+      <h1 class="title-project"> My Projects</h1>
+      <div class="project-container">
+        <div class="project-grid">
+          <img src="/assets/proj1.gif" alt="Mobile Prototype Project">
+          <div class="project-lines">
+          <h4> Wanderplan</h4>
+          <p>It is a mobile application prototype. It is about travel planning.</p>
+          <a href="https://www.figma.com/proto/ISQ7MZwHHq24aymlFfWNih/CAGUIAT_WANDERPLAN_PROTOTYPE?type=design&node-id=83-1697&t=DDZPT4Z3DifPUPHc-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=83%3A1697&mode=design">
+          <i class='bx bxs-right-arrow-circle'></i></a>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <img src="/assets/proj2.gif" alt="Mobile Prototype Project">
+          <div class="project-lines">
+          <h4> Sheeshilog</h4>
+          <p>It is a Restaurant Billing System</p>
+          <a href="https://github.com/tarafrncscc/Sheeshilog-Restaurant-Billing-System">
+          <i class='bx bxs-right-arrow-circle'></i></a>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <img src="/assets/proj3.gif" alt="Mobile Prototype Project">
+          <div class="project-lines">
+          <h4> ATM System</h4>
+          <p>It is for ATM Registration and ATM Transaction</p>
+          <a href="https://github.com/tarafrncscc/ATM-Transaction_Registration_System">
+          <i class='bx bxs-right-arrow-circle'></i></a>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <img src="/assets/proj4.gif" alt="Mobile Prototype Project">
+          <div class="project-lines">
+          <h4> Game Characters</h4>
+          <p>Customize your Game Character! GUI Project</p>
+          <a href="https://github.com/tarafrncscc/Game-Character-GUI">
+          <i class='bx bxs-right-arrow-circle'></i></a>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <img src="/assets/proj5.gif" alt="Mobile Prototype Project">
+          <div class="project-lines">
+          <h4> Caratland</h4>
+          <p>It is a Application UI. An application for Seventeen Contents</p>
+          <a href="https://www.figma.com/proto/ISQ7MZwHHq24aymlFfWNih/CAGUIAT_WANDERPLAN_PROTOTYPE?type=design&node-id=83-1697&t=DDZPT4Z3DifPUPHc-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=83%3A1697&mode=design">
+          <i class='bx bxs-right-arrow-circle'></i></a>
+          </div>
+        </div>
+
+         <div class="project-grid">
+          <img src="/assets/proj6.gif" alt="Mobile Prototype Project">
+          <div class="project-lines">
+          <h4> Confianza&Vogue</h4>
+          <p>It is a fashion website. Choose your own style!</p>
+          <a href="https://www.figma.com/proto/ISQ7MZwHHq24aymlFfWNih/CAGUIAT_WANDERPLAN_PROTOTYPE?type=design&node-id=83-1697&t=DDZPT4Z3DifPUPHc-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=83%3A1697&mode=design">
+          <i class='bx bxs-right-arrow-circle'></i></a>
+          </div>
+        </div>
+
+    </section>
+    <section class="contact" id="contact">
+      <h1 class="title-contact">Contact Me</h1>
+
+        <div class="contact-fillup">
+          <form>
+            <h7>Send a Message!</h7>
+            <div class="input-box"> 
+              <input type="text" name="" required="">
+              <span>Full Name</span>
+            </div>
+            <div class="input-box"> 
+              <input type="text" name="" required="">
+              <span>Email</span>
+            </div>
+            <div class="input-box"> 
+              <textarea required=""></textarea>
+              <span>Type your Message..</span>
+            </div>
+            <div class="input-box"> 
+              <input type="submit" name="" value="Send">
+            </div>
+          </form>
+        </div>
+      </div>
+</div>
+    </section>
+    <footer>
+      <div class="footer-content">
+             <p> Caguiat Creatives <br/>
+      Copyright &#169; 2023 Tara Caguiat. All Rights Reserved.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
