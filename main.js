@@ -1,23 +1,19 @@
-/*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
 
-/*=============== MENU SHOW ===============*/
 if (navToggle) {
   navToggle.addEventListener("click", () => {
     navMenu.classList.add("show-menu");
   });
 }
 
-/*=============== MENU HIDDEN ===============*/
 if (navClose) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
   });
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll(".nav__link");
 
 const linkAction = () => {
@@ -26,16 +22,6 @@ const linkAction = () => {
 };
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*=============== CHANGE BG HEADER ===============*/
-// const shadowHeader = () => {
-//   const header = document.getElementById("header");
-//   this.scrollY >= 50
-//     ? header.classList.add("scroll-header")
-//     : header.classList.remove("scroll-header");
-// };
-// window.addEventListener("scroll", scrollHeader);
-
-/*=============== SHADOW HEADER ===============*/
 const shadowHeader = () => {
   const header = document.getElementById("header");
   this.scrollY >= 50
@@ -76,7 +62,6 @@ const sendEmail = (e) => {
 
 contactForm.addEventListener("submit", sendEmail);
 
-/*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
   const scrollUp = document.getElementById("scroll-up");
   this.scrollY >= 350
@@ -84,7 +69,7 @@ const scrollUp = () => {
     : scrollUp.classList.remove("show-scroll");
 };
 window.addEventListener("scroll", scrollUp);
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+
 const sections = document.querySelectorAll("section[id]");
 
 const scrollActive = () => {
@@ -135,7 +120,7 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+
 const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
